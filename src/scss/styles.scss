@@ -1,17 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Sansita');
+
 body {
     background: #C0D5DB;
     text-align: center;
+    margin: 0;
+	padding: 0;
+	line-height: 1.3em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	height: 100%;
+	min-height: 100%;
 }
+
 li {
 	list-style: none;
 }
 
+ul {
+ 	margin: 0 auto;
+  	display: block;
+}
+
+ul li {
+  	margin: 0 0 0 1em;
+  	display: inline;
+}
+h1 {
+	text-align: center;
+	color: #d9534f;
+	padding-top: 1em;
+	font-weight: 400;
+	font-size: 4em;
+	font-family: 'Sansita', sans-serif;
+}
+
+input,
+button,
+select {
+	background-color:#fff;
+	border: 0;
+	margin: 0;
+	padding: 0.1em 0.5em;
+	line-height: 1.3em;
+	height: 3em;
+	display: inline-block;
+	vertical-align: bottom;
+	color: #111;
+	font-family: 'Open Sans', sans-serif;
+	display: inline;
+}
+
+$close-icon-height: 32px;
+
+.button--secondary {
+	box-shadow: 4px 4px 0px rgba(0,0,0,.1);
+}
+
+.button--unstyled {
+	background: none;
+}
+
+
 .notes {
+	margin: 0;
+	padding: 0;
+	display: block;
 
 	&__card {
-		background-color: #EEEEDB;
-		width: 10em;
-		height: 10em;
-		display: inline-block;
+		margin: 0;
+		padding: 0;
+		width: 33.3%;
+		flex: 1 0 auto;
+
+		&-header {
+			height: $close-icon-height;
+		    top: 0;
+		    left: 0;
+		    right: 0;
+		}
+
+		&-wrapper {
+			margin: 1em;
+			background-color: #EEEEDB;
+			position: relative;
+		}
+
+		&-body {
+			padding: 0 2em 2em 2em;
+			text-align: left;
+		}
+
+		&-footer {
+
+		}
+
+		&-footer-labels {
+			padding: 0;
+			margin: 0;
+
+			li {
+				display: inline;
+				margin: 3px 0;
+			}
+
+		}
+
+
+        @media only screen and (min-width: 720px) {
+			vertical-align: top;
+			position: relative;
+		}
 	}
+    
+    @media only screen and (min-width: 720px) {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+}
+
+.filter {
+
+	&__item {
+
+	}
+
+	&__label {
+		
+	}
+
+}
+.close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: $close-icon-height;
+	height: $close-icon-height;
+	opacity: 0.3;
+}
+.close:hover {
+	opacity: 1;
+}
+.close:before, .close:after {
+	position: absolute;
+	left: 15px;
+	content: ' ';
+	height: 33px;
+	top: 0;
+	width: 2px;
+	background-color: #333;
+}
+.close:before {
+ 	transform: rotate(45deg);
+}
+.close:after {
+ 	transform: rotate(-45deg);
 }

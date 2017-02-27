@@ -9,38 +9,113 @@
     </head>
     <body class="gray-bg">
         <script type="text/javascript" src="http://localhost:8080/main.bundle.js" charset="utf-8"></script>
-        <h1>Redux Talk Example App</h1>
+        <h1>Scribbler</h1>
         <section>
             <form>
-                <input type='text'>
-                <button type="submit">Save note</button>
+                <input type='text'/>
+                <button type="submit" class="button--secondary">Save a new note</button>
             </form>
+            <form>
+                <h4>Filter notes by label</h4>
+                <ul class="filter">
+                    <li class="filter__item">
+                        <label class="filter__label" for="label1">
+                            <span>Label 1</span>
+                            <input type="checkbox" name="{{labelName}}" id="label1" value="label1" checked>
+                        </label>
+                    </li>
+                    <li class="filter__item">
+                        <label class="filter__label" for="label1">
+                            <span>Label 1</span>
+                            <input type="checkbox" name="{{labelName}}" id="label1" value="label1" checked>
+                        </label>
+                    </li>
+                    <li class="filter__item">
+                        <label class="filter__label" for="label1">
+                            <span>Label 1</span>
+                            <input type="checkbox" name="{{labelName}}" id="label1" value="label1" checked>
+                        </label>
+                    </li>
+                </ul>
+                </form>
         </section>
         <section>
             <div>
                 <ul class="notes">
                     <li class="notes__card">
-                        <h3>Card name</h3>
-                        <div>
-                            <p>Card Notes</p>
+                        <div class="notes__card-wrapper">
+                            <div class="notes__card-header">
+                                <button type="submit" class='close'></button>
+                            </div>
+                            <h3>Card name</h3>
+                            <div class="notes__card-body">
+                                <p>Card Notes</p>
+                            </div>
+                            <div class="notes__card-footer">
+                                <ul class="notes__card-footer-labels">
+                                    <li><button type='submit'>Category A</button></li>
+                                    <li><button type='submit'>Category B</button></li>
+                                    <li><button type='submit'>Category C</button></li>
+                                </ul>
+                                <button type="submit" class='button--unstyled'>Archive?</button>
+                            </div>
                         </div>
                     </li>
                     <li class="notes__card">
-                        <h3>Card name</h3>
-                        <div>
-                            <p>Card Notes</p>
+                        <div class="notes__card-wrapper">
+                            <div class="notes__card-header">
+                                <button type="submit" class='close'></button>
+                            </div>
+                            <h3>Card name</h3>
+                            <div class="notes__card-body">
+                                <p>Card Notes</p>
+                            </div>
+                            <div class="notes__card-footer">
+                                <ul class="notes__card-footer-labels">
+                                    <li><button type='submit'>Category A</button></li>
+                                    <li><button type='submit'>Category B</button></li>
+                                    <li><button type='submit'>Category C</button></li>
+                                </ul>
+                                <button type="submit" class='button--unstyled'>Archive?</button>
+                            </div>
                         </div>
                     </li>
                     <li class="notes__card">
-                        <h3>Card name</h3>
-                        <div>
-                            <p>Card Notes</p>
+                        <div class="notes__card-wrapper">
+                            <div class="notes__card-header">
+                                <button type="submit" class='close'></button>
+                            </div>
+                            <h3>Card name</h3>
+                            <div class="notes__card-body">
+                                <p>Card Notes</p>
+                            </div>
+                            <div class="notes__card-footer">
+                                <ul class="notes__card-footer-labels">
+                                    <li><button type='submit'>Category A</button></li>
+                                    <li><button type='submit'>Category B</button></li>
+                                    <li><button type='submit'>Category C</button></li>
+                                </ul>
+                                <button type="submit" class='button--unstyled'>Archive?</button>
+                            </div>
                         </div>
                     </li>
                     <li class="notes__card">
-                        <h3>Card name</h3>
-                        <div>
-                            <p>Card Notes</p>
+                        <div class="notes__card-wrapper">
+                            <div class="notes__card-header">
+                                <button type="submit" class='close'></button>
+                            </div>
+                            <h3>Card name</h3>
+                            <div class="notes__card-body">
+                                <p>Card Notes</p>
+                            </div>
+                            <div class="notes__card-footer">
+                                <ul class="notes__card-footer-labels">
+                                    <li><button type='submit'>Category A</button></li>
+                                    <li><button type='submit'>Category B</button></li>
+                                    <li><button type='submit'>Category C</button></li>
+                                </ul>
+                                <button type="submit" class='button--unstyled'>Archive?</button>
+                            </div>
                         </div>
                     </li>
                 </ul>
