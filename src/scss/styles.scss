@@ -2,3 +2,16 @@ body {
     background: #C0D5DB;
     text-align: center;
 }
+li {
+	list-style: none;
+}
+
+.notes {
+
+	&__card {
+		background-color: #EEEEDB;
+		width: 10em;
+		height: 10em;
+		display: inline-block;
+	}
+}
