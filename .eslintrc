@@ -1,0 +1,25 @@
+{
+    "extends": "airbnb",
+    "parser": "babel-eslint",
+    "ecmaFeatures": {
+        "experimentalObjectRestSpread": true
+    },
+    "rules": {
+        "indent": [1, 4, {indentSwitchCase: true}],
+        "comma-dangle": 1,
+        "no-use-before-define": 0,
+        "id-length": 0,
+        "camelcase": 0,
+        "no-console": 0,
+        "no-alert": 0,
+        "no-param-reassign": [2, { props: false }],
+        "no-nested-ternary": 0,
+        "max-len": [2, 110],
+        "react/jsx-indent": [2, 4],
+        "react/jsx-indent-props": [2, 4],
+        "global-require": 0,
+        "strict": 0,
+        "prefer-arrow-callback": 0,
+        "func-names": 0
+    }
+}

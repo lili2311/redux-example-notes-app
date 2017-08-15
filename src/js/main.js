@@ -1,20 +1,27 @@
-require('../scss/styles.scss');
-console.log('========= REDUX APP EXAMPLE JS =========');
+'use strict';
 
-const newNoteButtonEl = document.querySelectorAll("input");
-console.log(newNoteButtonEl);
-console.log(newNoteButtonEl.length);
+/* global window */
 
-if (!newNoteButtonEl.forEach) {
-	console.log('nope')
-}
-else {
-	newNoteButtonEl.forEach( el => {
-		el.addEventListener('click', clickedAddNewNoteButton(e));
-	})
-}
+/* imports */
+import { notesBoard } from './components/notes-board';
+import '../scss/styles.scss';
 
-function clickedAddNewNoteButton(e) {
-	console.log('CLICK');
-	return false;
-}
+
+console.log("====> notesBoard = ", notesBoard.name);
+// const newNoteButtonEl = document.querySelectorAll("input");
+// console.log(newNoteButtonEl);
+// console.log(newNoteButtonEl.length);
+
+// if (!newNoteButtonEl.forEach) {
+// 	console.log('nope')
+// }
+// else {
+// 	newNoteButtonEl.forEach( el => {
+// 		el.addEventListener('click', clickedAddNewNoteButton(e));
+// 	})
+// }
+
+// function clickedAddNewNoteButton(e) {
+// 	console.log('CLICK');
+// 	return false;
+// }
