@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "babel": "babel --presets es2015 js/main.js -o build/main.bundle.js",
     "start": "http-server",
-    "webpack": "webpack --progress --colors --watch"
+    "webpack": "webpack --progress --colors --watch",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "author": "",
   "license": "ISC",
@@ -27,15 +29,17 @@
     "webpack-dev-server": "^2.4.1"
   },
   "dependencies": {
-    "babel-eslint": "^7.2.3",
+    "babel-eslint": "^10.1.0",
     "babel-plugin-transform-runtime": "^6.23.0",
-    "eslint": "^3.0.0",
+    "eslint": "^9.0.0",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.1.0",
-    "html-webpack-plugin": "^2.30.1",
-    "http-server": "^0.10.0",
-    "redux": "^3.7.2",
-    "redux-thunk": "^2.2.0"
-  }
+    "html-webpack-plugin": "^5.5.0",
+    "http-server": "^0.13.0",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.2.0",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
